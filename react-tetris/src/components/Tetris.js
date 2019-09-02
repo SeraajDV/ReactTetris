@@ -8,7 +8,8 @@ import StartButton from './StartButton';
 
 const Tetris = () => {
     return (
-        <div>
+        <StyledTetrisWrapper>
+            <StyledTetris>
             <Stage stage={createStage()}/>
             <aside>
                 <div>
@@ -18,7 +19,8 @@ const Tetris = () => {
                 </div>
                 <StartButton />
             </aside>
-        </div>
+            </StyledTetris>
+        </StyledTetrisWrapper>
     );
 };
 
